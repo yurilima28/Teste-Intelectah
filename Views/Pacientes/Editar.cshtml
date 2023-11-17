@@ -1,0 +1,17 @@
+﻿@model PacientesModel
+
+
+<div class="text-center">
+    <h1 class="display-4"> Editar Paciente</h1>
+
+</div>
+
+<form asp-controller="Pacientes" asp-action="Alterar" method="post">
+
+    <input type="hidden" asp-for="Id"/>
+
+    @Html.Partial("Form.cshtml")
+
+    <button type="submit" class="btn btn-primary btn-block">Alterar</button>
+    <a class="btn btn-secondary btn-block" asp-controller="Pacientes" asp-action="Index" role="button">Voltar</a>
+</form>

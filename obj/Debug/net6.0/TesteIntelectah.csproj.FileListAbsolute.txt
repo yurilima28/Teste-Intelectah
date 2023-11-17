@@ -1,0 +1,8 @@
+C:\Users\yurin\OneDrive\Documentos\Estudo\Agedamento\obj\Debug\net6.0\TesteIntelectah.csproj.AssemblyReference.cache
+C:\Users\yurin\OneDrive\Documentos\Estudo\Agedamento\obj\Debug\net6.0\TesteIntelectah.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yurin\OneDrive\Documentos\Estudo\Agedamento\obj\Debug\net6.0\TesteIntelectah.AssemblyInfoInputs.cache
+C:\Users\yurin\OneDrive\Documentos\Estudo\Agedamento\obj\Debug\net6.0\TesteIntelectah.AssemblyInfo.cs
+C:\Users\yurin\OneDrive\Documentos\Estudo\Agedamento\obj\Debug\net6.0\TesteIntelectah.csproj.CoreCompileInputs.cache
+C:\Users\yurin\OneDrive\Documentos\Estudo\Agedamento\obj\Debug\net6.0\TesteIntelectah.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\yurin\OneDrive\Documentos\Estudo\Agedamento\obj\Debug\net6.0\TesteIntelectah.RazorAssemblyInfo.cache
+C:\Users\yurin\OneDrive\Documentos\Estudo\Agedamento\obj\Debug\net6.0\TesteIntelectah.RazorAssemblyInfo.cs
