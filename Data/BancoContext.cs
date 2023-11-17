@@ -1,5 +1,5 @@
 ﻿using Agedamento.Models;
-
+using Agendamento.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace Agedamento.Data
@@ -11,5 +11,7 @@ namespace Agedamento.Data
 
         }
         public DbSet<PacientesModel> Pacientes { get; set; }
+        public DbSet<ExameModel> Exames { get; set; }
     }
+    
 }

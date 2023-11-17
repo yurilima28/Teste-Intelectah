@@ -1,5 +1,7 @@
 ﻿using Agedamento.Data;
 using Agedamento.Models;
+using System.Collections.Generic;
+
 
 namespace Agendamento.Repositorio
 {
@@ -39,7 +41,6 @@ namespace Agendamento.Repositorio
         public PacientesModel Adicionar(PacientesModel paciente)
         {
            
-               
                 _bancoContext.Pacientes.Add(paciente);
                 _bancoContext.SaveChanges();
                 return paciente;
