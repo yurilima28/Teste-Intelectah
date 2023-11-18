@@ -1,5 +1,4 @@
-﻿using Agedamento.Models;
-using Agendamento.Models;
+﻿using Agendamento.Models;
 
 namespace Agendamento.Repositorio
 {
@@ -7,8 +6,9 @@ namespace Agendamento.Repositorio
     {
         ExameModel ListarPorId(int id);
         List<ExameModel> BuscarTodos();
-        ExameModel Atualizar (ExameModel exame);
         ExameModel Adicionar(ExameModel exame);
+        ExameModel Atualizar(ExameModel exame);
         bool Apagar(int id);
+
     }
 }

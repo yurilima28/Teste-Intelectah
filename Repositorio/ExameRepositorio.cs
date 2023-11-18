@@ -1,9 +1,9 @@
-﻿
-using Agedamento.Data;
+﻿using Agedamento.Data;
 using Agendamento.Models;
 
 namespace Agendamento.Repositorio
 {
+
     public class ExameRepositorio : IExameRepositorio
     {
         private readonly BancoContext _bancoContext;
@@ -27,9 +27,10 @@ namespace Agendamento.Repositorio
         {
             ExameModel exameDB = ListarPorId(exame.Id);
             if (exameDB == null) throw new Exception("Houve um erro na atualização do exame");
-
-            exameDB.Nome = exame.Nome;
-            exameDB.Descricao = exame.Descricao;
+            
+            exameDB.TipoExameId = exame.TipoExameId;
+            exameDB.Nome = exame.Nome; 
+            exameDB.Observacoes = exame.Observacoes;
 
             _bancoContext.Exames.Update(exameDB);
             _bancoContext.SaveChanges();
@@ -56,3 +57,5 @@ namespace Agendamento.Repositorio
         }
     }
 }
+    
+

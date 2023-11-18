@@ -1,0 +1,22 @@
+﻿@using Agendamento.Models;
+
+@model TipoExameModel
+
+
+
+@{
+    ViewData["Title"] = "Editar tipo de exame";
+}
+
+<div class="text-center">
+    <h1 class="display-4"> Editar tipo de exames</h1>
+
+</div>
+
+
+<form asp-controller="TipoExames" asp-action="Alterar" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    @Html.Partial("Form.cshtml")
+
+</form>

@@ -20,16 +20,24 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uc3VsdGFcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento/Views/Exames/ApagarConfirmacao.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhhbWVzXEFwYWdhckNvbmZpcm1hY2FvLmNzaHRtbA==
+[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento/Views/Exame/ApagarConfirmacao.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhhbWVcQXBhZ2FyQ29uZmlybWFjYW8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento/Views/Exames/Criar.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhhbWVzXENyaWFyLmNzaHRtbA==
+[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento/Views/Exame/Criar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhhbWVcQ3JpYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento/Views/Exames/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhhbWVzXEluZGV4LmNzaHRtbA==
+[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento/Views/Exame/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhhbWVcRWRpdGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento/Views/Exame/Form.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhhbWVcRm9ybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento/Views/Exame/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhhbWVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento/Views/Home/Index.cshtml]
@@ -64,8 +72,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento/Views/TipoDeExames/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0RlRXhhbWVzXEluZGV4LmNzaHRtbA==
+[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento/Views/TipoExames/ApagarConfirmacao.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0V4YW1lc1xBcGFnYXJDb25maXJtYWNhby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento/Views/TipoExames/Criar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0V4YW1lc1xDcmlhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento/Views/TipoExames/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0V4YW1lc1xFZGl0YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento/Views/TipoExames/Form.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0V4YW1lc1xGb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento/Views/TipoExames/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0V4YW1lc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento/Views/_ViewImports.cshtml]

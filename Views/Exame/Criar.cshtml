@@ -1,0 +1,19 @@
+﻿@using Agendamento.Models;
+
+@model ExameModel
+
+@{
+    ViewData["Title"] = "Cadastro exames";
+}
+
+<div class="text-center">
+    <h1 class="display-4"> Cadastrar exames</h1>
+
+</div> 
+
+
+<form asp-controller="Exame" asp-action="Criar" method="post">
+
+    @Html.Partial("Form.cshtml")
+
+</form>

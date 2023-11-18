@@ -1,0 +1,95 @@
+﻿@using Agendamento.Models;
+
+
+@model List<TipoExameModel>
+
+
+@{
+    ViewData["Title"] = "Cadastro de tipo de exame";
+
+}
+
+<div class="text-center">
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <a class="btn btn-primary" role="button" asp-controller="TipoExames" asp-action="Criar">Adicionar novo tipo de exame</a>
+    </div>
+    <br />
+
+    @if (TempData["MensagemSucesso"] != null)
+    {
+        <div class="alert alert-success" role="alert">
+            <button type="button" class="btn btn-danger btn-sm close-alert" arial="Close">X</button>
+            @TempData["MensagemSucesso"]
+        </div>
+
+    }
+    @if (TempData["MensagemErro"] != null)
+    {
+        <div class="alert alert-danger" role="alert">
+
+            <button type="button" class="btn btn-danger btn-sm close-alert" arial="Close">X</button>
+            @TempData["MensagemErro"]
+        </div>
+
+    }
+    <br />
+
+    <div class="text-center">
+        <h1 class="display-4"> Cadastrar exames</h1>
+
+    </div>
+
+
+    <form asp-controller="Exames" asp-action="Criar" method="post">
+
+        <ul class="list" id="Exame">
+            <h1>Lista tipo de exames</h1>
+
+        </ul>
+        @if (Model != null && Model.Any())
+        {
+            <table class="table" id="table-Exames">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Observações</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @if (Model != null && Model.Any())
+                    {
+                        foreach (TipoExameModel TipoExame in Model)
+                        {
+
+                            <tr>
+                                <th scope="row">@TipoExame.Id</th>
+                                <td>@TipoExame.Nome</td>
+                                <td>@TipoExame.Descricao</td>
+                                <td>
+                                    <div class="btn-group" role="group">
+                                        <a role="button" class="btn btn-primary display flex" asp-route-id="@TipoExame.Id" asp-controller="TipoExames" asp-action="Editar">Editar</a>
+                                        <a role="button" class="btn btn-danger" asp-route-id="@TipoExame.Id" asp-controller="TipoExames" asp-action="ApagarConfirmacao">Apagar</a>
+
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+
+
+
+                    }
+                </tbody>
+            </table>
+
+        }
+
+
+
+
+
+
+    </form>

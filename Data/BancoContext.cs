@@ -11,6 +11,7 @@ namespace Agedamento.Data
 
         }
         public DbSet<PacientesModel> Pacientes { get; set; }
+        public DbSet<TipoExameModel> TipoExames { get; set; }
         public DbSet<ExameModel> Exames { get; set; }
     }
     

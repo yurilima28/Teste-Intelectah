@@ -7,19 +7,19 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
 
-public class ExamesController : Controller
+public class TipoExamesController : Controller
 {
-    private readonly IExameRepositorio _exameRepositorio;
-
-    public ExamesController(IExameRepositorio ExameRpositorio)
+    private readonly ITipoExamesRepositorio _tipoExamesRepositorio;
+    
+    public TipoExamesController(ITipoExamesRepositorio TipoExamesRepositorio)
     {
-        _exameRepositorio = ExameRpositorio;
+        _tipoExamesRepositorio = TipoExamesRepositorio;
     }
 
     public IActionResult Index()
     {
-        List<ExameModel> exames = _exameRepositorio.BuscarTodos();
-        return View(exames);
+        List<TipoExameModel> TipoExames = _tipoExamesRepositorio.BuscarTodos();
+        return View(TipoExames);
     }
 
     public IActionResult Criar()
@@ -28,13 +28,13 @@ public class ExamesController : Controller
     }
     public IActionResult Editar(int id)
     {
-        ExameModel exame = _exameRepositorio.ListarPorId(id);
-        return View(exame);
+        TipoExameModel TipoExame = _tipoExamesRepositorio.ListarPorId(id);
+        return View(TipoExame);
     }
     public IActionResult ApagarConfirmacao(int id)
     {
-        ExameModel exame = _exameRepositorio.ListarPorId(id);
-        return View(exame);
+        TipoExameModel TipoExame= _tipoExamesRepositorio.ListarPorId(id);
+        return View(TipoExame);
 
     }
 
@@ -42,7 +42,7 @@ public class ExamesController : Controller
     {
         try
         {
-            bool apagado = _exameRepositorio.Apagar(id);
+            bool apagado = _tipoExamesRepositorio.Apagar(id);
             if (apagado)
             {
                 TempData["MensagemSucesso"] = " Exame excluido com sucesso!";
@@ -63,17 +63,17 @@ public class ExamesController : Controller
     }
 
     [HttpPost]
-    public IActionResult Criar(ExameModel exame)
+    public IActionResult Criar(TipoExameModel TipoExame)
     {
         try
         {
             if (ModelState.IsValid)
             {
-                _exameRepositorio.Adicionar(exame);
+                _tipoExamesRepositorio.Adicionar(TipoExame);
                 TempData["MensagemSucesso"] = "Exame cadastrado com sucesso";
                 return RedirectToAction("Index");
             }
-            return View(exame);
+            return View(TipoExame);
         }
         catch (Exception erro)
         {
@@ -85,18 +85,18 @@ public class ExamesController : Controller
     }
 
     [HttpPost]
-    public IActionResult Alterar(ExameModel exame)
+    public IActionResult Alterar(TipoExameModel TipoExame)
     {
         try
         {
             if (ModelState.IsValid)
             {
-                _exameRepositorio.Atualizar(exame);
+                _tipoExamesRepositorio.Atualizar(TipoExame);
                 TempData["MensagemSucesso"] = "Exame alterado com sucesso";
                 return RedirectToAction("Index");
 
             }
-            return View("Editar", exame);
+            return View("Editar", TipoExame);
         }
         catch (Exception erro)
         {

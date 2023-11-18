@@ -13,7 +13,12 @@ builder.Services.AddDbContext<BancoContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
+builder.Services.AddScoped<ITipoExamesRepositorio, TipoExamesRepositorio>();
 builder.Services.AddScoped<IPacientesRepositorio, PacientesRepositorio>();
+builder.Services.AddScoped<IExameRepositorio, ExameRepositorio>();
+
+
+
 
 var app = builder.Build();
 
