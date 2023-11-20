@@ -1,0 +1,32 @@
+﻿@using Agendamento.Models;
+
+@model TipoExameModel
+
+
+
+
+<div class="container">
+    <h1 class="mt-5">Cadastro de Consulta</h1>
+
+    <form asp-controller="Consulta" asp-action="Criar" method="post">
+        <div class="mb-3">
+            <label for="paciente" class="form-label">Pacientes:</label>
+            <select class="form-select" id="paciente" name="paciente" required>
+                <option value="">Selecione o paciente</option>
+
+            </select>
+
+        </div>
+
+        <div class="mb-3">
+            <label for="tipoExame" class="form-label">Tipo de Exame:</label>
+            <select class="form-select" id="tipoExame" name="tipoExame" required>
+                <option value="">Selecione o Tipo de Exame</option>
+                
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Cadastrar Consulta</button>
+
+    </form>
+</div>

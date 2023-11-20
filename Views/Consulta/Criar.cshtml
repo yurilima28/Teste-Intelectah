@@ -1,0 +1,19 @@
+﻿@using Agendamento.Models;
+
+@model ConsultaModel
+
+@{
+    ViewData["Title"] = "Cadastro Consulta";
+}
+
+<div class="text-center">
+    <h1 class="display-4"> Marcação de  Consultas</h1>
+
+</div> 
+
+
+<form asp-controller="Consulta" asp-action="Criar" method="post">
+
+    @Html.Partial("Form.cshtml")
+
+</form>

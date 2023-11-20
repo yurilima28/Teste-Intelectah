@@ -16,6 +16,7 @@ builder.Services.AddDbContext<BancoContext>(options =>
 builder.Services.AddScoped<ITipoExamesRepositorio, TipoExamesRepositorio>();
 builder.Services.AddScoped<IPacientesRepositorio, PacientesRepositorio>();
 builder.Services.AddScoped<IExameRepositorio, ExameRepositorio>();
+builder.Services.AddScoped<IConsultaRepositorio , ConsultaRepositorio>();
 
 
 

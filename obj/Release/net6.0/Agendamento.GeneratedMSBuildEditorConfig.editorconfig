@@ -9,65 +9,101 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Agendamento
 build_property.RootNamespace = Agendamento
-build_property.ProjectDir = C:\Users\yurin\OneDrive\Documentos\Estudo\Agedamento\
+build_property.ProjectDir = C:\Users\yurin\OneDrive\Documentos\Estudo\Agedamento1\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\yurin\OneDrive\Documentos\Estudo\Agedamento
+build_property.MSBuildProjectDirectory = C:\Users\yurin\OneDrive\Documentos\Estudo\Agedamento1
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento/Views/Consulta/Index.cshtml]
+[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento1/Views/Consulta/Consulta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uc3VsdGFcQ29uc3VsdGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento1/Views/Consulta/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uc3VsdGFcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento/Views/Exames/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhhbWVzXEluZGV4LmNzaHRtbA==
+[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento1/Views/Exame/ApagarConfirmacao.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhhbWVcQXBhZ2FyQ29uZmlybWFjYW8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento/Views/Home/Index.cshtml]
+[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento1/Views/Exame/Criar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhhbWVcQ3JpYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento1/Views/Exame/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhhbWVcRWRpdGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento1/Views/Exame/Form.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhhbWVcRm9ybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento1/Views/Exame/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhhbWVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento1/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento/Views/Pacientes/ApagarConfirmacao.cshtml]
+[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento1/Views/Pacientes/ApagarConfirmacao.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFjaWVudGVzXEFwYWdhckNvbmZpcm1hY2FvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento/Views/Pacientes/Criar.cshtml]
+[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento1/Views/Pacientes/Criar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFjaWVudGVzXENyaWFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento/Views/Pacientes/Editar.cshtml]
+[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento1/Views/Pacientes/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFjaWVudGVzXEVkaXRhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento/Views/Pacientes/Form.cshtml]
+[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento1/Views/Pacientes/Form.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFjaWVudGVzXEZvcm0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento/Views/Pacientes/Index.cshtml]
+[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento1/Views/Pacientes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFjaWVudGVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento/Views/Shared/Error.cshtml]
+[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento1/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento1/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento/Views/TipoDeExames/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0RlRXhhbWVzXEluZGV4LmNzaHRtbA==
+[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento1/Views/TipoExames/ApagarConfirmacao.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0V4YW1lc1xBcGFnYXJDb25maXJtYWNhby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento/Views/_ViewImports.cshtml]
+[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento1/Views/TipoExames/Criar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0V4YW1lc1xDcmlhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento1/Views/TipoExames/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0V4YW1lc1xFZGl0YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento1/Views/TipoExames/Form.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0V4YW1lc1xGb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento1/Views/TipoExames/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0V4YW1lc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento1/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento/Views/_ViewStart.cshtml]
+[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento1/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento/Views/Shared/_Layout.cshtml]
+[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento1/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-8smkvk5z7n

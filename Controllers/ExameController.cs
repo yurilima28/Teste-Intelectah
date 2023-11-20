@@ -29,13 +29,14 @@ namespace Agendamento.Controllers
                    
                    List<TipoExameModel> tipoExames = _tipoExamesRepositorio.BuscarTodos();
                     ViewBag.TipoExames = tipoExames;
-                    ViewBag.Teste = "Teste";
                    return View();
             }
             public IActionResult Editar(int id)
             {
                  
-                ExameModel exame = _exameRepositorio.ListarPorId(id);
+                 ExameModel exame = _exameRepositorio.ListarPorId(id);
+                 List<TipoExameModel> tipoExames = _tipoExamesRepositorio.BuscarTodos();
+                 ViewBag.TipoExames = tipoExames;
                 return View(exame);
             }
             public IActionResult ApagarConfirmacao(int id)
@@ -76,7 +77,7 @@ namespace Agendamento.Controllers
                 {
                     if (ModelState.IsValid)
                     {
-                    _exameRepositorio.Adicionar(exame);
+                        _exameRepositorio.Adicionar(exame);
                         TempData["MensagemSucesso"] = "Exame cadastrado com sucesso";
                         return RedirectToAction("Index");
                     }

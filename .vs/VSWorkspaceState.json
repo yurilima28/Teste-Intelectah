@@ -1,5 +1,8 @@
 {
-  "ExpandedNodes": [],
-  "SelectedNode": "\\Agedamento.sln",
+  "ExpandedNodes": [
+    "",
+    "\\Controllers"
+  ],
+  "SelectedNode": "\\Controllers\\ExameController.cs",
   "PreviewInSolutionExplorer": false
 }

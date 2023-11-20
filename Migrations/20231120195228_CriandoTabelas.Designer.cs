@@ -4,6 +4,7 @@ using Agedamento.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Agendamento.Migrations
 {
     [DbContext(typeof(BancoContext))]
-    partial class BancoContextModelSnapshot : ModelSnapshot
+    [Migration("20231120195228_CriandoTabelas")]
+    partial class CriandoTabelas
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -29,9 +31,6 @@ namespace Agendamento.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<int?>("ConsultaModelId")
-                        .HasColumnType("int");
 
                     b.Property<string>("Cpf")
                         .IsRequired()
@@ -50,12 +49,6 @@ namespace Agendamento.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<int?>("PacienteId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("PacientesId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Sexo")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -66,10 +59,6 @@ namespace Agendamento.Migrations
                         .HasColumnType("nvarchar(16)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("ConsultaModelId");
-
-                    b.HasIndex("PacientesId");
 
                     b.ToTable("Pacientes");
                 });
@@ -147,26 +136,6 @@ namespace Agendamento.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("TipoExames");
-                });
-
-            modelBuilder.Entity("Agedamento.Models.PacientesModel", b =>
-                {
-                    b.HasOne("Agendamento.Models.ConsultaModel", null)
-                        .WithMany("Pacientes")
-                        .HasForeignKey("ConsultaModelId");
-
-                    b.HasOne("Agedamento.Models.PacientesModel", "Pacientes")
-                        .WithMany()
-                        .HasForeignKey("PacientesId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Pacientes");
-                });
-
-            modelBuilder.Entity("Agendamento.Models.ConsultaModel", b =>
-                {
-                    b.Navigation("Pacientes");
                 });
 #pragma warning restore 612, 618
         }

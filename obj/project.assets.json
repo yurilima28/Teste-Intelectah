@@ -2170,11 +2170,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\yurin\\OneDrive\\Documentos\\Estudo\\Agedamento\\Agendamento.csproj",
+      "projectUniqueName": "C:\\Users\\yurin\\OneDrive\\Documentos\\Estudo\\Agedamento1\\Agendamento.csproj",
       "projectName": "Agendamento",
-      "projectPath": "C:\\Users\\yurin\\OneDrive\\Documentos\\Estudo\\Agedamento\\Agendamento.csproj",
+      "projectPath": "C:\\Users\\yurin\\OneDrive\\Documentos\\Estudo\\Agedamento1\\Agendamento.csproj",
       "packagesPath": "C:\\Users\\yurin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\yurin\\OneDrive\\Documentos\\Estudo\\Agedamento\\obj\\",
+      "outputPath": "C:\\Users\\yurin\\OneDrive\\Documentos\\Estudo\\Agedamento1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\yurin\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Agendamento.Models;
+using System;
 using System.ComponentModel.DataAnnotations;
 using static Agendamento.Validator.CpfValidacao;
 
@@ -32,6 +33,8 @@ namespace Agedamento.Models
         [EmailAddress(ErrorMessage = "E-mail informado é inválido")]
         
         public string Email { get; set; }
+
+        
     }
 
 }

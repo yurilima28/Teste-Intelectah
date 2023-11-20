@@ -68,3 +68,12 @@ C:\Users\yurin\OneDrive\Documentos\Estudo\Agedamento\obj\Debug\net6.0\refint\Age
 C:\Users\yurin\OneDrive\Documentos\Estudo\Agedamento\obj\Debug\net6.0\Agendamento.pdb
 C:\Users\yurin\OneDrive\Documentos\Estudo\Agedamento\obj\Debug\net6.0\Agendamento.genruntimeconfig.cache
 C:\Users\yurin\OneDrive\Documentos\Estudo\Agedamento\obj\Debug\net6.0\ref\Agendamento.dll
+C:\Users\yurin\OneDrive\Documentos\Estudo\Agedamento1\obj\Debug\net6.0\Agendamento.csproj.AssemblyReference.cache
+C:\Users\yurin\OneDrive\Documentos\Estudo\Agedamento1\obj\Debug\net6.0\Agendamento.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yurin\OneDrive\Documentos\Estudo\Agedamento1\obj\Debug\net6.0\Agendamento.AssemblyInfoInputs.cache
+C:\Users\yurin\OneDrive\Documentos\Estudo\Agedamento1\obj\Debug\net6.0\Agendamento.AssemblyInfo.cs
+C:\Users\yurin\OneDrive\Documentos\Estudo\Agedamento1\obj\Debug\net6.0\Agendamento.csproj.CoreCompileInputs.cache
+C:\Users\yurin\OneDrive\Documentos\Estudo\Agedamento1\obj\Debug\net6.0\Agendamento.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\yurin\OneDrive\Documentos\Estudo\Agedamento1\obj\Debug\net6.0\Agendamento.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\yurin\OneDrive\Documentos\Estudo\Agedamento1\obj\Debug\net6.0\Agendamento.RazorAssemblyInfo.cache
+C:\Users\yurin\OneDrive\Documentos\Estudo\Agedamento1\obj\Debug\net6.0\Agendamento.RazorAssemblyInfo.cs

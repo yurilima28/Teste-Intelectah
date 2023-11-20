@@ -9,7 +9,7 @@ namespace Agendamento.Models
 
         [ForeignKey("TipoExame")]
         public int TipoExameId { get; set; }
-        public virtual TipoExameModel tipoExame { get; set; }
+        
 
         [Required(ErrorMessage = "Informe nome do paciente")]
         [MaxLength(100)]
