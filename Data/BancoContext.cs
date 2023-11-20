@@ -1,5 +1,4 @@
 ﻿using Agedamento.Models;
-using Agendamento.Data.Map;
 using Agendamento.Models;
 using Microsoft.EntityFrameworkCore;
 
