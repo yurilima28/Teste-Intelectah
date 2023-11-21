@@ -1,5 +1,7 @@
 ﻿using Agedamento.Data;
 using Agendamento.Models;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 
 namespace Agendamento.Repositorio
 {
@@ -7,6 +9,7 @@ namespace Agendamento.Repositorio
     public class ExameRepositorio : IExameRepositorio
     {
         private readonly BancoContext _bancoContext;
+
 
         public ExameRepositorio(BancoContext bancoContext)
         {
@@ -55,6 +58,14 @@ namespace Agendamento.Repositorio
 
             return true;
         }
+
+        public List<ExameModel> BuscarPorTipo(int tipoExameId)
+        {
+            return _bancoContext.Exames
+                .Where(e => e.TipoExameId == tipoExameId)
+                .ToList();
+        }
+
     }
 }
     

@@ -28,7 +28,7 @@ namespace Agendamento.Controllers
             {
                    
                    List<TipoExameModel> tipoExames = _tipoExamesRepositorio.BuscarTodos();
-                    ViewBag.TipoExames = tipoExames;
+                   ViewBag.TipoExames = tipoExames;
                    return View();
             }
             public IActionResult Editar(int id)
@@ -98,7 +98,8 @@ namespace Agendamento.Controllers
             {
                 try
                 {
-                    if (ModelState.IsValid)
+                
+                     if (ModelState.IsValid )
                     {
                     _exameRepositorio.Atualizar(exame);
                         TempData["MensagemSucesso"] = "Paciente alterado com sucesso";
@@ -113,6 +114,7 @@ namespace Agendamento.Controllers
                     return RedirectToAction("Index");
                 }
             }
+
         }
     }
 

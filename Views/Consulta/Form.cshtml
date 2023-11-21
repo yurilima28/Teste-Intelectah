@@ -1,32 +1,123 @@
 ﻿@using Agendamento.Models;
 
-@model TipoExameModel
+@model ConsultaModel
 
 
 
 
-<div class="container">
+<div class="container row" >
     <h1 class="mt-5">Cadastro de Consulta</h1>
 
-    <form asp-controller="Consulta" asp-action="Criar" method="post">
-        <div class="mb-3">
-            <label for="paciente" class="form-label">Pacientes:</label>
-            <select class="form-select" id="paciente" name="paciente" required>
-                <option value="">Selecione o paciente</option>
+    <div class="form-group">
+        <label for="filtro">Buscar pacientes</label>
+        <input type="text" id="filtroPaciente" class="form-control" placeholder="Buscar por nome ou cpf" />
+        
+    </div>
+        <button  id="buscarPaciente" class="btn btn-primary">Buscar Paciente</button>
+    <a class="btn btn-secondary " id="cadastrar" style="visibility: hidden;" asp-action="Paciente" asp-controller="Pacientes" role="button">Criar</a>
 
-            </select>
+    <form asp-controller="Consulta" asp-action="Agendar" method="post">
+        <div class="form-group col-6">
+            <label for="paciente" class="form-label">Pacientes:</label>
+            <select asp-for="PacienteId" class="form-select" id="paciente" name="PacienteId" required>
+
+    </select>
 
         </div>
 
-        <div class="mb-3">
-            <label for="tipoExame" class="form-label">Tipo de Exame:</label>
-            <select class="form-select" id="tipoExame" name="tipoExame" required>
-                <option value="">Selecione o Tipo de Exame</option>
-                
+            <label for="tipoExame">Selecione o Tipo de Exame:</label>
+            <select id="tipoExame">
+                <option value="">Selecione</option>
+                @foreach (var tipoExame in ViewBag.TipoExame)
+                {
+                    <option value="@tipoExame.Id">@tipoExame.Nome</option>
+                }
             </select>
+
+        <div class="form-group col-6">
+            <label for="Exame" class="form-label">Exame:</label>
+            <select asp-for="ExameId" class="form-select" id="Exame" name="ExameId" required>
+              
+
+            </select>
+   
+        
+        <div class="form-group col-3">
+            <label for="dataHora">Selecione Data e Hora:</label>
+            <input type="datetime-local" id="dataHora" name="dataHora" required>
+        </div>
+           
+
+        <div class="form-group col-3  ">
+            <label for="Protocolo">Protocolo</label>
+            <input disabled type="text" value="@ViewBag.Protocolo" asp-for="Protocolo" class="form-control"  />
+             
         </div>
 
         <button type="submit" class="btn btn-primary">Cadastrar Consulta</button>
+        <a class="btn btn-secondary " asp-action="Index" asp-controller="Consulta" role="button">Voltar</a>
 
     </form>
+
 </div>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+    $(document).ready(function () {
+        
+         $("#tipoExame").change(function ()
+         {
+             
+            var tipoExameId = $(this).val();
+            $.ajax({
+                url: "/Consulta/CarregarExames", 
+                type: "GET",
+                data: { tipoExameId: tipoExameId },
+                success: function (data) {
+                    
+                    $("#Exame").empty();
+                    $.each(data, function (i, exame) {
+                        console.log(exame)
+                        $("#Exame").append('<option value="' + exame.id + '">' + exame.nome + '</option>');
+                    });
+                },
+                error: function () {
+                    console.error("Erro ao carregar exames.");
+                }
+            });
+        });
+
+        $("#buscarPaciente").click(function () {
+
+            var filtroPaciente = $("#filtroPaciente").val();
+            $.ajax({
+                url: "/Consulta/buscarPaciente",
+                type: "GET",
+                data: { filtroPaciente: filtroPaciente },
+                success: function (data) {
+                    
+                    if (data.length != 0)
+                    { 
+                        $("#cadastrar").css("visibility", "hidden")
+                    }else 
+                    {
+                        $("#cadastrar").css("visibility", "visible")
+                       
+                    }
+
+                    $("#paciente").empty();
+                    $.each(data, function (i, paciente) {
+
+                        $("#paciente").append('<option value="' + paciente.id + '">' + paciente.nome + '</option>');
+                    });
+                },
+                error: function () {
+                    console.error("Erro ao carregar os pacientes.");
+                }
+            });
+        });
+    });
+</script>
+
+
+

@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Agendamento.Migrations
 {
     [DbContext(typeof(BancoContext))]
-    [Migration("20231120214915_CriandoVinculo")]
-    partial class CriandoVinculo
+    [Migration("20231121193004_CriandoTabelas")]
+    partial class CriandoTabelas
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -32,9 +32,6 @@ namespace Agendamento.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<int?>("ConsultaModelId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Cpf")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -52,12 +49,6 @@ namespace Agendamento.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<int?>("PacienteId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("PacientesId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Sexo")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -68,10 +59,6 @@ namespace Agendamento.Migrations
                         .HasColumnType("nvarchar(16)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("ConsultaModelId");
-
-                    b.HasIndex("PacientesId");
 
                     b.ToTable("Pacientes");
                 });
@@ -98,6 +85,8 @@ namespace Agendamento.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("PacienteId");
 
                     b.ToTable("Consulta");
                 });
@@ -151,24 +140,15 @@ namespace Agendamento.Migrations
                     b.ToTable("TipoExames");
                 });
 
-            modelBuilder.Entity("Agedamento.Models.PacientesModel", b =>
+            modelBuilder.Entity("Agendamento.Models.ConsultaModel", b =>
                 {
-                    b.HasOne("Agendamento.Models.ConsultaModel", null)
-                        .WithMany("Pacientes")
-                        .HasForeignKey("ConsultaModelId");
-
-                    b.HasOne("Agedamento.Models.PacientesModel", "Pacientes")
+                    b.HasOne("Agedamento.Models.PacientesModel", "Paciente")
                         .WithMany()
-                        .HasForeignKey("PacientesId")
+                        .HasForeignKey("PacienteId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Pacientes");
-                });
-
-            modelBuilder.Entity("Agendamento.Models.ConsultaModel", b =>
-                {
-                    b.Navigation("Pacientes");
+                    b.Navigation("Paciente");
                 });
 #pragma warning restore 612, 618
         }

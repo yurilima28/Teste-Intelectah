@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\yurin\OneDrive\Documentos\Estudo\Agedamento1
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento1/Views/Agendamento/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbmRhbWVudG9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/yurin/OneDrive/Documentos/Estudo/Agedamento1/Views/Consulta/Agendar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uc3VsdGFcQWdlbmRhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

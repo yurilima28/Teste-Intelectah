@@ -9,6 +9,8 @@ namespace Agendamento.Repositorio
         PacientesModel Adicionar(PacientesModel paciente);
 
         PacientesModel Atualizar (PacientesModel paciente);
+
+         List<PacientesModel> BuscarPorNomeCpf(string filtro);
         bool Apagar(int id);
     }
 }

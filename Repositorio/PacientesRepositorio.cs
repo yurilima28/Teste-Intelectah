@@ -20,6 +20,12 @@ namespace Agendamento.Repositorio
         {
             return _bancoContext.Pacientes.FirstOrDefault(x => x.Id == id);
         }
+
+        public List <PacientesModel> BuscarPorNomeCpf (string filtro)
+        {
+            return _bancoContext.Pacientes
+            .Where(p => p.Nome.Contains(filtro) || p.Cpf.Contains(filtro)).ToList();
+        }
         public PacientesModel Atualizar(PacientesModel paciente)
         {
             PacientesModel pacienteDB = ListarPorId(paciente.Id);
@@ -40,7 +46,11 @@ namespace Agendamento.Repositorio
 
         public PacientesModel Adicionar(PacientesModel paciente)
         {
-           
+           if(_bancoContext.Pacientes.Any(x => x.Cpf == paciente.Cpf))
+            {
+                throw new Exception("CPF já cadastrado");
+            }
+
                 _bancoContext.Pacientes.Add(paciente);
                 _bancoContext.SaveChanges();
                 return paciente;

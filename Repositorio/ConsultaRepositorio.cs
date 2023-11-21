@@ -13,11 +13,14 @@ namespace Agendamento.Repositorio
             _bancoContext = bancoContext;
             _logger = logger;
         }
-        public bool DataHoraConflitante(ConsultaModel consulta)
+        public bool DataHoraConflitante(ConsultaModel novaConsulta)
         {
             try
             {
-                return _bancoContext.Consulta.Any(x => x.DataHora == consulta.DataHora);
+                return (_bancoContext.Consulta.Any(c =>
+                c.DataHora == novaConsulta.DataHora && 
+                c.ExameId == novaConsulta.ExameId && 
+                c.Id != novaConsulta.Id));
             }
             catch (Exception ex)
             {
@@ -51,6 +54,12 @@ namespace Agendamento.Repositorio
 
         public ConsultaModel Adicionar(ConsultaModel consulta)
         {
+            if(DataHoraConflitante(consulta))
+            {
+                throw new Exception("Conflito de horário. Já existe uma consultada agendada neste horario");
+            }
+
+
             _bancoContext.Consulta.Add(consulta);
             _bancoContext.SaveChanges();
             return consulta;

@@ -43,7 +43,7 @@
 
     <form asp-controller="Consulta" asp-action="Criar" method="post">
 
-        <ul class="list" id="Exame">
+        <ul class="list" id="Consulta">
             <h1>Lista Consultas</h1>
 
         </ul>
@@ -64,10 +64,11 @@
                     {
                         foreach (ConsultaModel consulta in Model)
                         {
-
                             <tr>
                                 <th scope="row">@consulta.Id</th>
-                                <td>@consulta.</td>
+                               
+                                <td>@consulta.Paciente</td>
+                                
                                 <td>@consulta.</td>
                                 <td>
                                     <div class="btn-group" role="group">

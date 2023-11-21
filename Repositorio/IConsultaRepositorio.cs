@@ -12,6 +12,7 @@ namespace Agendamento.Repositorio
         ConsultaModel Atualizar(ConsultaModel consulta);
 
         bool DataHoraConflitante(ConsultaModel consulta);
+        
         bool Apagar(int id);
     }
 }
